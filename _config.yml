@@ -8,9 +8,9 @@ subtitle:
 description:
 keywords:
 author: 张泰林
-language: 
-- zh-CN
-- en
+language:
+  - zh-CN
+  - en
 timezone:
 
 # URL
@@ -18,12 +18,13 @@ timezone:
 url: http://yoursite.com
 root: /
 # permalink: :year/:month/:day/:title/
-permalink: docs/:abbrlink.html
+permalink: :translate_title.html
+#permalink: docs/:abbrlink.html
 permalink_defaults:
 # abbrlink config
-abbrlink:
-  alg: crc32  # 算法：crc16(default) and crc32
-  rep: hex    # 进制：dec(default) and hex
+#abbrlink:
+#  alg: crc32  # 算法：crc16(default) and crc32
+#  rep: hex    # 进制：dec(default) and hex
 
 # Directory
 source_dir: source
@@ -50,7 +51,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -59,7 +60,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -115,3 +116,12 @@ image_minifier:
   optimizationLevel: 2
   pngquant: false
   progressive: false
+
+translate_title:
+  translate_way: google  # google,youdao,baidu_with_appid,baidu_no_appid
+  youdao_api_key: '' # Your youdao_api_key
+  youdao_keyfrom: xxxx-blog # Your youdao_keyfrom
+  is_need_proxy: false     # true | false
+  proxy_url: http://localhost:50018 # Your proxy_url
+  baidu_appid: '' # Your baidu_appid
+  baidu_appkey: '' # Your baidu_appkey
