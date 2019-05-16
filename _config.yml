@@ -18,7 +18,7 @@ timezone:
 url: http://yoursite.com
 root: /
 # permalink: :year/:month/:day/:title/
-permalink: posts/:abbrlink/  # “posts/” 可自行更换
+permalink: docs/:abbrlink.html
 permalink_defaults:
 # abbrlink config
 abbrlink:
